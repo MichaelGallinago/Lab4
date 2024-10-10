@@ -7,6 +7,10 @@ android {
     namespace = "net.micg.lab4"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "net.micg.lab4"
         minSdk = 24
