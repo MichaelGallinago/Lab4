@@ -70,6 +70,11 @@ class ScheduleAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     class LessonElementViewHolder(private val binding: LessonItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
+
+        private val uiList = with(binding) {
+            listOf(time, teacher, building, buildingIndex, classroom, classroomIndex)
+        }
+
         fun onBind(item: LessonListItem) {
             binding.name.text = item.name
 
@@ -88,13 +93,8 @@ class ScheduleAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             }
         }
 
-        private fun setUiVisibility(@Visibility visibility: Int) = with(binding) {
-            time.visibility = visibility
-            teacher.visibility = visibility
-            building.visibility = visibility
-            buildingIndex.visibility = visibility
-            classroom.visibility = visibility
-            classroomIndex.visibility = visibility
+        private fun setUiVisibility(@Visibility visibility: Int) = uiList.forEach {
+            it.visibility = visibility
         }
 
         companion object {
