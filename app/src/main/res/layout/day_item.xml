@@ -5,28 +5,18 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:paddingHorizontal="16dp"
-    android:paddingVertical="8dp">
+    android:paddingTop="20dp"
+    android:paddingBottom="8dp">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Понедельник"
-        android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="01.03.2004"
-        android:textColor="@color/gray"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

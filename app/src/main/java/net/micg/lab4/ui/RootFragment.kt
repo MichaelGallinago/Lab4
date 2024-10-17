@@ -10,21 +10,9 @@ import net.micg.lab4.databinding.FragmentRootBinding
 import utils.ScheduleDataUtils.getScheduleForThisDay
 import utils.ScheduleDataUtils.getScheduleForThisWeek
 
-class RootFragment : Fragment() {
-
+class RootFragment : Fragment(R.layout.fragment_root) {
     private val binding: FragmentRootBinding by viewBinding()
-
     private val scheduleAdapter = ScheduleAdapter()
-
-    private fun setUpBottomNavigationClickListener() {
-        binding.bottomNavView.setOnItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.action_today -> scheduleAdapter.submitValue(getScheduleForThisDay())
-                else -> scheduleAdapter.submitValue(getScheduleForThisWeek())
-            }
-            true
-        }
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -36,6 +24,16 @@ class RootFragment : Fragment() {
             adapter = scheduleAdapter
         }
 
-        scheduleAdapter.submitValue(getScheduleForThisWeek())
+        scheduleAdapter.submitValue(getScheduleForThisDay())
+    }
+
+    private fun setUpBottomNavigationClickListener() {
+        binding.bottomNavView.setOnItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.action_today -> scheduleAdapter.submitValue(getScheduleForThisDay())
+                else -> scheduleAdapter.submitValue(getScheduleForThisWeek())
+            }
+            true
+        }
     }
 }

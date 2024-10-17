@@ -89,8 +89,8 @@ object ScheduleDataUtils {
                         "Тестирование ПО (Лек)",
                         "19:30-21:00",
                         "Булавин Р.",
-                        "132",
-                        "1"
+                        "--",
+                        "--"
                     ),
                 )
             ), Pair(
@@ -110,14 +110,14 @@ object ScheduleDataUtils {
                         "1"
                     ),
                     LessonListItem(
-                        "Технологии прикладного программирования (Лек)",
+                        "Android-разработка (Лек)",
                         "15:00-16:30",
                         "Веригин Н.",
                         "326",
                         "1"
                     ),
                     LessonListItem(
-                        "Технологии прикладного программирования (Пр)",
+                        "Android-разработка (Пр)",
                         "16:40-18:10",
                         "Веригин Н.",
                         "326",
@@ -237,14 +237,14 @@ object ScheduleDataUtils {
                         "1"
                     ),
                     LessonListItem(
-                        "Технологии прикладного программирования (Лек)",
+                        "Android-разработка (Лек)",
                         "15:00 - 16:30",
                         "Веригин Н.",
                         "326",
                         "1"
                     ),
                     LessonListItem(
-                        "Технологии прикладного программирования (Пр)",
+                        "Android-разработка (Пр)",
                         "16:40 - 18:10",
                         "Веригин Н.",
                         "326",
@@ -260,7 +260,7 @@ object ScheduleDataUtils {
 
     private fun getCurrentSchedule() =
         if ((Calendar.getInstance().get(Calendar.WEEK_OF_YEAR)) % 2 == 0)
-            secondWeekSchedule else firstWeekSchedule
+            firstWeekSchedule else secondWeekSchedule
 
     fun getScheduleForThisDay(): List<ScheduleListItem> {
         val currentDayOfWeek = LocalDate.now().dayOfWeek.ordinal
