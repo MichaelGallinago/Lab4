@@ -2,4 +2,13 @@
     <string name="app_name">Lab4</string>
     <string name="week_navigation">Неделя</string>
     <string name="today_navigation">Сегодня</string>
+    <string name="building_label">К.</string>
+    <string name="classroom_label">А.</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="sunday">Воскресенье</string>
 </resources>
