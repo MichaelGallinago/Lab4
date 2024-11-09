@@ -168,14 +168,14 @@ object ScheduleDataUtils {
                         "Базы Данных (Пр)",
                         "18:20 - 19:50",
                         "Барабанщиков С.А.",
-                        "А-13",
+                        "132",
                         "1"
                     ),
                     LessonListItem(
                         "Базы Данных (Пр)",
                         "19:55 - 21:25",
                         "Барабанщиков С.А.",
-                        "А-13",
+                        "132",
                         "1"
                     ),
                 )
@@ -222,20 +222,6 @@ object ScheduleDataUtils {
                 )
             ), Pair(
                 ScheduleListItem.DayTitleListItem(DayOfWeek.SATURDAY), listOf(
-                    LessonListItem(
-                        "Тестирование ПО (Пр)",
-                        "11:20 - 12:50",
-                        "Булавин Р.",
-                        "132",
-                        "1"
-                    ),
-                    LessonListItem(
-                        "Тестирование ПО (Пр)",
-                        "13:15 - 14:45",
-                        "Булавин Р.",
-                        "132",
-                        "1"
-                    ),
                     LessonListItem(
                         "Android-разработка (Лек)",
                         "15:00 - 16:30",
