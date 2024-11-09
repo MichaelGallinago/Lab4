@@ -211,14 +211,7 @@ object ScheduleDataUtils {
                         "Мирасов С.А.",
                         "212",
                         "1"
-                    ),
-                    LessonListItem(
-                        "Тестирование ПО (Лек)",
-                        "19:30 - 21:00",
-                        "Булавин Р.",
-                        "--",
-                        "--"
-                    ),
+                    )
                 )
             ), Pair(
                 ScheduleListItem.DayTitleListItem(DayOfWeek.SATURDAY), listOf(
